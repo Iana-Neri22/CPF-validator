@@ -1,11 +1,8 @@
-// function hasElevenNumbers(cpfNumber){
-//   if(cpfNumber.length === 11){
-//     //No lugar de true vai executar outra função
-//     return true;
-//   }
-// }
-// console.log(hasElevenNumbers("40084948809"))
-// //Beleza, até aqui recebo a string com 11 números e valido se contém 11 números
+function hasElevenNumbers(cpfNumber){
+  if(cpfNumber.length === 11){
+    return true;
+  }
+}
 
 const cpfNumber = 400849488;
 
