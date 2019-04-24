@@ -7,31 +7,26 @@
 // console.log(hasElevenNumbers("40084948809"))
 // //Beleza, até aqui recebo a string com 11 números e valido se contém 11 números
 
-let cpfNumber = 400849488;
+const cpfNumber = 400849488;
 
-let convertedCpf = cpfNumber.toString().split('').map(Number)
+const convertedCpf = cpfNumber.toString().split('').map(Number)
 
-let multiplication = []
+const multiplication = []
 
 for (let multiplier = 10; multiplier >=2; multiplier--) {
     multiplication.push(convertedCpf[0] * multiplier)
     convertedCpf.shift();
   }
 
-
-const arrSum = arr =>
+const arrSum = () =>
 multiplication.reduce(function(a, b) {
   return a + b;
 }, 0);
 
-// console.log(convertedCpf);
+const resultado = arrSum() / 11
 
-let resultado = arrSum() / 11
-
-// let resto = ""
-
-var precision = (resultado + "").split(".")[1];
-let meuArray = [];
+const precision = (resultado + "").split(".")[1];
+const meuArray = [];
 meuArray.push(precision[0])
 numero = Number(meuArray)
 
