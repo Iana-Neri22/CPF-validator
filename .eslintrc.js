@@ -1,6 +1,6 @@
 module.exports = {
     'env': {
-        'browser': true,
+        'node': true,
         'commonjs': true,
         'es6': true
     },
@@ -30,6 +30,12 @@ module.exports = {
             'always'
         ],
         'camelcase': 2,
-        'keyword-spacing': 1
+        'keyword-spacing': 1,
+        'semi': [2, "always"],
+        'eslint comma-spacing': ['error', { "before": false, "after": true }],
+        'eslint key-spacing': ["error", { "beforeColon": true }],
+        'eslint space-before-function-paren': ["error", "never"],
+        'eslint padded-blocks': ["error", "never"],
+        'eslint quotes' : ["error", "single"]
     }
 };
