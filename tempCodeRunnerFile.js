@@ -1,1 +1,1 @@
-false
+console.log(digits);

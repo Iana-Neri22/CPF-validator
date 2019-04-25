@@ -10,17 +10,22 @@ function extractDigits(cpfNumber){
 }
 
 function convertCpf(nineDigits){ 
-  console.log(nineDigits.toString().split('').map(Number))
+  let separado = nineDigits.toString().split('').map(Number)
+  multiply(separado)
+}
+
+//Até aqui os números são separados
+function multiply(separado){
+const multiplication = []
+
+for (let multiplier = 10; multiplier >=2; multiplier--) {
+    multiplication.push(separado[0] * multiplier)
+    separado.shift();
+    console.log(multiplication)
+  }
 }
 
 console.log(hasElevenNumbers("40084948809"))
-
-// const multiplication = []
-
-// for (let multiplier = 10; multiplier >=2; multiplier--) {
-//     multiplication.push(convertedCpf[0] * multiplier)
-//     convertedCpf.shift();
-//   }
 
 // const arrSum = () =>
 // multiplication.reduce(function(a, b) {
