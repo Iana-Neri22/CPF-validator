@@ -16,21 +16,22 @@ function convertCpf(nineDigits){
 
 //Até aqui os números são separados
 function multiply(separado){
-const multiplication = []
-
-for (let multiplier = 10; multiplier >=2; multiplier--) {
-    multiplication.push(separado[0] * multiplier)
-    separado.shift();
-    console.log(multiplication)
+  const multiplication = []
+  
+  for (let multiplier = 10; multiplier >=2; multiplier--) {
+      multiplication.push(separado[0] * multiplier)
+      separado.shift();
+    }
+    sumNumbers(multiplication)
   }
-}
-
-console.log(hasElevenNumbers("40084948809"))
-
-// const arrSum = () =>
-// multiplication.reduce(function(a, b) {
-//   return a + b;
-// }, 0);
+  
+  function sumNumbers(multiplication){
+  let soma = multiplication.reduce(function(a, b) {
+    return a + b;
+  }, 0);
+  console.log(soma)
+  }
+  console.log(hasElevenNumbers("40084948809"))
 
 // const resultado = arrSum() / 11
 
