@@ -1,7 +1,11 @@
 function hasElevenNumbers(cpfNumber){
     if(cpfNumber.length === 11){
-      return true
+      extractDigits(cpfNumber)
     }
+}
+
+function extractDigits(cpfNumber){
+  console.log(cpfNumber.substring(0, 9));
 }
 
 console.log(hasElevenNumbers("40084948809"))
