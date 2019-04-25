@@ -5,12 +5,12 @@ function hasElevenNumbers(cpfNumber){
 }
 
 function extractDigits(cpfNumber){
-  const firstNineDigits = cpfNumber.substring(0, 9)
-  convertCpf(firstNineDigits)
+  const nineDigits = cpfNumber.substring(0, 9)
+  convertCpf(nineDigits)
 }
 
-function convertCpf(firstNineDigits){ 
-  console.log(firstNineDigits.toString().split('').map(Number))
+function convertCpf(nineDigits){ 
+  console.log(nineDigits.toString().split('').map(Number))
 }
 
 console.log(hasElevenNumbers("40084948809"))
