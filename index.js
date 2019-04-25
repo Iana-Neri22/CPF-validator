@@ -1,8 +1,10 @@
 function hasElevenNumbers(cpfNumber){
-  if(cpfNumber.length === 11){
-    return true;
-  }
+    if(cpfNumber.length === 11){
+      return true
+    }
 }
+
+console.log(hasElevenNumbers("40084948809"))
 
 const cpfNumber = 400849488;
 
@@ -22,13 +24,15 @@ multiplication.reduce(function(a, b) {
 
 const resultado = arrSum() / 11
 
+console.log(Number.isInteger(resultado))
+
 const precision = (resultado + "").split(".")[1];
 const meuArray = [];
 meuArray.push(precision[0])
 numero = Number(meuArray)
 
-if(numero === 0 || numero ===1){
-  console.log(true)
-} else{
-  console.log(false)
-}
+// if(numero === 0 || numero ===1){
+//   console.log(true)
+// } else{
+//   console.log(false)
+// }
