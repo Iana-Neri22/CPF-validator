@@ -29,13 +29,19 @@ function multiply(separado){
   let soma = multiplication.reduce(function(a, b) {
     return a + b;
   }, 0);
-  console.log(soma)
+  console.log(soma / 11)
   }
+
+  function isInteger(soma){
+    if(Number.isInteger(soma) === true){
+      console.log("O primeiro dígito verificador é zero")
+    }
+    else{
+      console.log("Falta programar")
+    }
+  }
+
   console.log(hasElevenNumbers("40084948809"))
-
-// const resultado = arrSum() / 11
-
-// console.log(Number.isInteger(resultado))
 
 // const precision = (resultado + "").split(".")[1];
 // const meuArray = [];
