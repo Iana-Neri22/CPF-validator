@@ -1,11 +1,14 @@
-// function hasElevenNumbers(cpfNumber){
-//   if(cpfNumber.length === 11){
-//     //No lugar de true vai executar outra função
-//     return true;
-//   }
-// }
-// console.log(hasElevenNumbers("40084948809"))
-// //Beleza, até aqui recebo a string com 11 números e valido se contém 11 números
+function hasElevenNumbers(cpfNumber){
+    if(cpfNumber.length === 11){
+      extractDigits(cpfNumber)
+    }
+}
+
+function extractDigits(cpfNumber){
+  console.log(cpfNumber.substring(0, 9));
+}
+
+console.log(hasElevenNumbers("40084948809"))
 
 const cpfNumber = 400849488;
 
@@ -25,13 +28,15 @@ multiplication.reduce(function(a, b) {
 
 const resultado = arrSum() / 11
 
+console.log(Number.isInteger(resultado))
+
 const precision = (resultado + "").split(".")[1];
 const meuArray = [];
 meuArray.push(precision[0])
 numero = Number(meuArray)
 
-if(numero === 0 || numero ===1){
-  console.log(true)
-} else{
-  console.log(false)
-}
+// if(numero === 0 || numero ===1){
+//   console.log(true)
+// } else{
+//   console.log(false)
+// }
