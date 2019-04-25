@@ -10,26 +10,38 @@ function extractDigits(cpfNumber){
 }
 
 function convertCpf(nineDigits){ 
-  console.log(nineDigits.toString().split('').map(Number))
+  let separado = nineDigits.toString().split('').map(Number)
+  multiply(separado)
 }
 
-console.log(hasElevenNumbers("40084948809"))
+//Até aqui os números são separados
+function multiply(separado){
+  const multiplication = []
+  
+  for (let multiplier = 10; multiplier >=2; multiplier--) {
+      multiplication.push(separado[0] * multiplier)
+      separado.shift();
+    }
+    sumNumbers(multiplication)
+  }
+  
+  function sumNumbers(multiplication){
+  let soma = multiplication.reduce(function(a, b) {
+    return a + b;
+  }, 0);
+  console.log(soma / 11)
+  }
 
-// const multiplication = []
+  function isInteger(soma){
+    if(Number.isInteger(soma) === true){
+      console.log("O primeiro dígito verificador é zero")
+    }
+    else{
+      console.log("Falta programar")
+    }
+  }
 
-// for (let multiplier = 10; multiplier >=2; multiplier--) {
-//     multiplication.push(convertedCpf[0] * multiplier)
-//     convertedCpf.shift();
-//   }
-
-// const arrSum = () =>
-// multiplication.reduce(function(a, b) {
-//   return a + b;
-// }, 0);
-
-// const resultado = arrSum() / 11
-
-// console.log(Number.isInteger(resultado))
+  console.log(hasElevenNumbers("40084948809"))
 
 // const precision = (resultado + "").split(".")[1];
 // const meuArray = [];
