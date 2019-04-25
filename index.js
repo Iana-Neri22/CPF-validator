@@ -5,38 +5,39 @@ function hasElevenNumbers(cpfNumber){
 }
 
 function extractDigits(cpfNumber){
-  console.log(cpfNumber.substring(0, 9));
+  const firstNineDigits = cpfNumber.substring(0, 9)
+  convertCpf(firstNineDigits)
+}
+
+function convertCpf(firstNineDigits){ 
+  console.log(firstNineDigits.toString().split('').map(Number))
 }
 
 console.log(hasElevenNumbers("40084948809"))
 
-const cpfNumber = 400849488;
+// const multiplication = []
 
-const convertedCpf = cpfNumber.toString().split('').map(Number)
+// for (let multiplier = 10; multiplier >=2; multiplier--) {
+//     multiplication.push(convertedCpf[0] * multiplier)
+//     convertedCpf.shift();
+//   }
 
-const multiplication = []
+// const arrSum = () =>
+// multiplication.reduce(function(a, b) {
+//   return a + b;
+// }, 0);
 
-for (let multiplier = 10; multiplier >=2; multiplier--) {
-    multiplication.push(convertedCpf[0] * multiplier)
-    convertedCpf.shift();
-  }
+// const resultado = arrSum() / 11
 
-const arrSum = () =>
-multiplication.reduce(function(a, b) {
-  return a + b;
-}, 0);
+// console.log(Number.isInteger(resultado))
 
-const resultado = arrSum() / 11
+// const precision = (resultado + "").split(".")[1];
+// const meuArray = [];
+// meuArray.push(precision[0])
+// numero = Number(meuArray)
 
-console.log(Number.isInteger(resultado))
-
-const precision = (resultado + "").split(".")[1];
-const meuArray = [];
-meuArray.push(precision[0])
-numero = Number(meuArray)
-
-// if(numero === 0 || numero ===1){
-//   console.log(true)
-// } else{
-//   console.log(false)
-// }
+// // if(numero === 0 || numero ===1){
+// //   console.log(true)
+// // } else{
+// //   console.log(false)
+// // }
