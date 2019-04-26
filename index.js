@@ -1,4 +1,4 @@
-function hasElevenNumbers(cpfNumber){
+function cpfValidator(cpfNumber){
     if(cpfNumber.length === 11){
       extractDigits(cpfNumber)
     }
@@ -14,7 +14,6 @@ function convertCpf(nineDigits){
   multiply(separado)
 }
 
-//Até aqui os números são separados
 function multiply(separado){
   const multiplication = []
   
@@ -37,19 +36,16 @@ function multiply(separado){
       console.log("O primeiro dígito verificador é zero")
     }
     else{
-      console.log("Falta programar")
+     passToInteger(soma) 
     }
   }
-
-  console.log(hasElevenNumbers("40084948809"))
-
-// const precision = (resultado + "").split(".")[1];
-// const meuArray = [];
-// meuArray.push(precision[0])
-// numero = Number(meuArray)
-
-// // if(numero === 0 || numero ===1){
-// //   console.log(true)
-// // } else{
-// //   console.log(false)
-// // }
+  function passToInteger(soma){
+    const precision = (soma + "").split(".")[1];
+    
+    const meuArray = [];
+    
+    meuArray.push(precision[0])
+    if(meuArray[0] === "0"){
+      console.log("o primeiro DV é 0")
+    }
+  }
