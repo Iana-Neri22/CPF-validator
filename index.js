@@ -1,4 +1,4 @@
-function hasElevenNumbers(cpfNumber){
+function cpfValidator(cpfNumber){
     if(cpfNumber.length === 11){
       extractDigits(cpfNumber)
     }
@@ -14,7 +14,6 @@ function convertCpf(nineDigits){
   multiply(separado)
 }
 
-//Até aqui os números são separados
 function multiply(separado){
   const multiplication = []
   
@@ -50,12 +49,3 @@ function multiply(separado){
       console.log("o primeiro DV é 0")
     }
   }
-// const meuArray = [];
-// meuArray.push(precision[0])
-// numero = Number(meuArray)
-
-// // if(numero === 0 || numero ===1){
-// //   console.log(true)
-// // } else{
-// //   console.log(false)
-// // }
