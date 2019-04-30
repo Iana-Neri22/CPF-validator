@@ -10,5 +10,8 @@ let CPF = require('../lib/cpf-validator');
       it('Return 0 to 40084948809', () => {
         expect(CPF.cpfValidator("40084948809")).to.equal(0);
       });
+      it('Return 0 to 30485749807', () => {
+        expect(CPF.cpfValidator("30485749807")).to.equal(0);
+      });
     });
   });
