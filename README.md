@@ -7,6 +7,7 @@ $ npm install cpf-validator
 
 #Como utilizar:
 
-#Roadmap Oficial do projeto:
+#Roadmap Oficial do projeto:  
+
 ##Versão 1.0.0
-Verifica cartão de crédito com 16 dígitos
+Verifica cartão de crédito com 16 dígitos e retorna true ou false
