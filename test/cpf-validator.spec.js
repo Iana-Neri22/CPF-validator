@@ -22,5 +22,8 @@ const CPF = require('../lib/cpf-validator');
       it('Return true to "31721384022"', () => {
         expect(CPF.cpfValidator("31721384022")).to.eql(true);
       });
+      it('Return false to "31721384021"', () => {
+        expect(CPF.cpfValidator("31721384012")).to.eql(false);
+      }); 
     });
   });
