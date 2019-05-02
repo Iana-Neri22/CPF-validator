@@ -19,5 +19,8 @@ const CPF = require('../lib/cpf-validator');
       it('Return 0 to 304.857.498-07', () => {
         expect(CPF.cpfValidator("304.857.498-07")).to.equal(true);
       });
+      it('Return true to "31721384022"', () => {
+        expect(CPF.cpfValidator("31721384022")).to.eql(true);
+      });
     });
   });
