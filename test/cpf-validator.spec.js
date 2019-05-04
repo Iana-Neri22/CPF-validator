@@ -25,5 +25,20 @@ const CPF = require('../lib/cpf-validator');
       it('Return false to "31721384021"', () => {
         expect(CPF.cpfValidator("31721384012")).to.eql(false);
       }); 
+      it('Return true to 26493330068', () => {
+        expect(CPF.cpfValidator(26493330068)).to.eql(true);
+      }); 
+      it('Return true to 72031402021', () => {
+        expect(CPF.cpfValidator(72031402021)).to.equal(true);
+      }); 
+      it('Return false to "ahdjsdofdoJAIDSDSA"', () => {
+        expect(CPF.cpfValidator("ahdjsdofdoJAIDSDSA")).to.equal(false);
+      });
+      it('Return true to "343.634.137-19"', () => {
+        expect(CPF.cpfValidator("343.634.137-19")).to.equal(true);
+      });
+      it('Return true to 224.348.768-38', () => {
+        expect(CPF.cpfValidator("018.250.033-00")).to.equal(true);
+      });
     });
   });
