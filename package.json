@@ -1,8 +1,8 @@
 {
-  "name": "js-library",
+  "name": "cpf-validator-ianan",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Esta biblioteca verifica se um número de CPF é válido ou não.",
+  "main": "./lib/cpf-validator.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/Iana-Neri22/js-library.git"
   },
-  "author": "",
+  "author": "Iana Neri",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Iana-Neri22/js-library/issues"
@@ -23,5 +23,12 @@
   },
   "devDependencies": {
     "nyc": "^14.1.0"
-  }
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "keywords": [
+    "cpf"
+  ]
 }
