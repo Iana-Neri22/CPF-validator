@@ -1,6 +1,6 @@
 {
   "name": "cpf-validator-ianan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Esta biblioteca verifica se um número de CPF é válido ou não.",
   "main": "./lib/cpf-validator.js",
   "scripts": {
