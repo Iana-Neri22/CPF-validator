@@ -1,13 +1,20 @@
-#Validador de CPF
+# Validador de CPF
 
-Esta biblioteca verifica se um número de CPF é verdadeiro ou falso.
+Esta biblioteca tem como finalidade verificar se um número de CPF é válido.
 
-#Como instalar:
-$ npm install cpf-validator
+## Como instalar:
 
-#Como utilizar:
+    $  npm i cpf-validator-ianan
 
-#Roadmap Oficial do projeto:  
+## Como utilizar:
 
-##Versão 1.0.0
-Verifica cartão de crédito com 16 dígitos e retorna true ou false
+    > const cpfValidator = require("cpf-validator-ianan")
+    > cpfValidator.cpfValidator(23256516068)
+    > //return true
+
+## Roadmap Oficial do projeto:
+
+###  Versão 1.0.0 (released)
+
+ - Validação de número de CPF 
+ - Aceita entradas do tipo number e string(incluindo caracteres especiais "-, .")
