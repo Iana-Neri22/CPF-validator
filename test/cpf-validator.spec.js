@@ -40,5 +40,8 @@ describe('cpf lib', () => {
     it('Return true to 224.348.768-38', () => {
       expect(CPF.cpfValidator('018.250.033-00')).to.equal(true);
     });
+    it('Return false to 11111111111', () => {
+      expect(CPF.cpfValidator('11111111111')).to.equal(false);
+    });
   });
 });
