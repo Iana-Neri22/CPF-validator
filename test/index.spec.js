@@ -1,6 +1,6 @@
 const chai = require('chai');
 const expect = chai.expect;
-const CPF = require('../lib/cpf-validator');
+const CPF = require('../lib/index.js');
 
 describe('cpf lib', () => {
   describe('cpfValidator', () => {
