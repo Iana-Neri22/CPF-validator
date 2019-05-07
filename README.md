@@ -14,7 +14,7 @@ Esta biblioteca tem como finalidade verificar se um número de CPF é válido.
 
 ## Roadmap Oficial do projeto:
 
-###  Versão 1.0.2 (released)
+###  Versão 1.0.3 (released)
 
  - Validação de número de CPF 
  - Aceita entradas do tipo number e string(incluindo caracteres especiais "-, .")
