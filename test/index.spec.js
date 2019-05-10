@@ -13,10 +13,10 @@ describe('cpf lib', () => {
     it('Return true to 14046006048', () => {
       expect(CPF.cpfValidator('14046006048')).to.equal(true);
     });
-    it('Return 0 to 16535321061', () => {
+    it('Return true to 16535321061', () => {
       expect(CPF.cpfValidator('16535321061')).to.equal(true);
     });
-    it('Return 0 to 304.857.498-07', () => {
+    it('Return true to 304.857.498-07', () => {
       expect(CPF.cpfValidator('304.857.498-07')).to.equal(true);
     });
     it('Return true to "31721384022"', () => {
