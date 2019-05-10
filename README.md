@@ -18,3 +18,8 @@ Esta biblioteca tem como finalidade verificar se um número de CPF é válido.
 
  - Validação de número de CPF 
  - Aceita entradas do tipo number e string(incluindo caracteres especiais "-, .")
+
+### Versão 2.0.0 (sem previsão, aceita-se contribuições)
+
+- README traduzido para inglês
+- Gerador de números de CPF
