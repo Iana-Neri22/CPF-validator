@@ -19,7 +19,7 @@
   "dependencies": {
     "chai": "^4.2.0",
     "eslint": "^5.16.0",
-    "mocha": "^6.1.4"
+    "mocha": "^10.2.0"
   },
   "devDependencies": {
     "nyc": "^14.1.0"
